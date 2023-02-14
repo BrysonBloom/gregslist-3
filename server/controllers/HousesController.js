@@ -23,8 +23,8 @@ export class HousesController extends BaseController {
     async getHouseById(req, res, next) {
         try {
             const id = req.params.id
-            house = await housesService.getHouseById(id)
-            res.send(house)
+            // house = await housesService.getHouseById(id)
+            res.send(res)
         } catch (error) {
             next(error)
         }
